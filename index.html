@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Adivina el Número</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>🎯 Adivina el Número</h1>
+  <p class="descripcion">Estoy pensando en un número del 1 al 100</p>
+
+  <input type="number" id="inputNumero" placeholder="Escribe tu número...">
+
+  <button class="btn" onclick="verificarNumero()">✔ Comprobar</button>
+
+  <p id="mensaje">¡Adivina para empezar!</p>
+
+  <button class="reset" onclick="reiniciarJuego()">🔄 Reiniciar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
