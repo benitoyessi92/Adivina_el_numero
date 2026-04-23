@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9eb5, #ff6f91);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Tarjeta principal */
+.card {
+  background: #fff0f5;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: aparecer 0.6s ease;
+}
+
+h1 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Input */
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 15px;
+  border: 2px solid #ff85a2;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Botón principal */
+.btn {
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  width: 90%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e6005c;
+  transform: scale(1.05);
+}
+
+/* Mensaje */
+#mensaje {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d63384;
+}
+
+/* Botón reiniciar */
+.reset {
+  margin-top: 15px;
+  background: transparent;
+  border: 2px solid #ff4d88;
+  color: #ff4d88;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset:hover {
+  background: #ff4d88;
+  color: white;
+}
+
+/* Animación */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
